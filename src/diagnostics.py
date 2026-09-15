@@ -1,7 +1,6 @@
 # Campaign diagnostics for fatigue and possible donor contamination.
 
 import numpy as np
-
 from .simulation import MarketPanel
 
 
@@ -28,4 +27,3 @@ def spillover_sensitivity(lift: float, contamination_range: tuple[float, float] 
         "corrected_lift_low": lift / (1 - low),
         "corrected_lift_high": lift / (1 - high),
     }
-
