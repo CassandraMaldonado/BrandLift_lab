@@ -52,8 +52,8 @@ def analyze(seed: int = 17, budget: float = 1_000_000) -> dict:
         },
         "decision": {
             "status": status,
-            "headline": f"Estimated incremental lift is {aggregate_lift:.1f} actions per market-week.",
-            "next_action": "Scale efficient markets, refresh creative before the detected fatigue point, and retain geographic holdouts.",
+            "headline": f"Estimated incremental lift is {aggregate_lift:.1f} actions per market week.",
+            "next_action": "Scale efficient markets, refresh creative before the detected fatigue point and retain geographic holdouts.",
         },
         "evidence": {
             "average_lift": aggregate_lift,
@@ -73,7 +73,7 @@ def analyze(seed: int = 17, budget: float = 1_000_000) -> dict:
         "allocation": [asdict(item) for item in allocations],
         "assumptions": [
             "Donor markets approximate untreated potential outcomes after pre-period matching.",
-            "No time-varying market shock affects treated markets exclusively.",
+            "No time varying market shock affects treated markets exclusively.",
             "Spillover sensitivity bounds donor contamination between 0% and 35%.",
             "Budget response follows a concave saturation curve over the planning horizon.",
         ],
