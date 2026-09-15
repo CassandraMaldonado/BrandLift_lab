@@ -1,4 +1,4 @@
-"""End-to-end causal evidence brief and decision policy."""
+# Evidence brief and decision policy.
 
 from dataclasses import asdict
 
