@@ -1,4 +1,4 @@
-"""Privacy-safe market panel with known campaign effects and spillovers."""
+# Privacy market panel with known campaign effects and spillovers.
 
 from dataclasses import dataclass
 
@@ -55,4 +55,3 @@ def simulate_panel(n_markets: int = 24, n_weeks: int = 26, seed: int = 17) -> Ma
         outcomes[market, post] += 2.2
 
     return MarketPanel(markets, weeks, outcomes, spend, treated, post, creator_share, frequency, true_incremental)
-
