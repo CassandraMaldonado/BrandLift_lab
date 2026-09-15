@@ -1,4 +1,4 @@
-"""Campaign diagnostics for fatigue and possible donor contamination."""
+# Campaign diagnostics for fatigue and possible donor contamination.
 
 import numpy as np
 
