@@ -28,8 +28,7 @@ def analyze(seed: int = 17, budget: float = 1_000_000) -> dict:
         observed_series.append(panel.outcomes[target_id])
     aggregate_lift = float(np.mean(lifts))
     average_pre_rmse = float(np.mean([item.pre_rmse for item in estimates]))
-    # With 18 donor markets, randomization inference is discrete. Treat p <= .20
-    # as directional support for a scaling decision, while exposing exact values.
+    # With 18 donor markets, randomization inference is discrete, so have p <= .20 as support for a decision, while exposing exact values.
     significant_share = float(np.mean([item.placebo_p <= 0.20 for item in estimates]))
     fatigue = fatigue_diagnostics(panel)
     sensitivity = spillover_sensitivity(aggregate_lift)
