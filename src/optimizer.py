@@ -1,4 +1,4 @@
-"""Diminishing-return budget optimization with uncertainty penalty."""
+# Diminishing return budget optimization with uncertainty penalty.
 
 from dataclasses import dataclass
 
