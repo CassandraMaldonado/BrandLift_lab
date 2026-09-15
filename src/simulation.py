@@ -1,9 +1,7 @@
 # Privacy market panel with known campaign effects and spillovers.
 
 from dataclasses import dataclass
-
 import numpy as np
-
 
 @dataclass(frozen=True)
 class MarketPanel:
@@ -43,7 +41,7 @@ def simulate_panel(n_markets: int = 24, n_weeks: int = 26, seed: int = 17) -> Ma
         spend[market, post] = weekly_spend
         cumulative_frequency = np.cumsum(weekly_spend / rng.uniform(65_000, 90_000))
         frequency[market, post] = cumulative_frequency
-        # Creator-led execution lifts response; repeated exposure produces fatigue.
+        # Creator execution lifts response and repeated exposure produces fatigue.
         lift = (14 + 13 * creator_share[market]) * (1 - np.exp(-weekly_spend / 50_000))
         fatigue = np.maximum(0, cumulative_frequency - 6) * 1.25
         effect = np.maximum(1.5, lift - fatigue)
