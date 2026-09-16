@@ -32,7 +32,7 @@ pip install -e '.[dev]'
 brandlift-lab
 ```
 
-Open [http://localhost:8000](http://localhost:8000), or print a reproducible decision brief:
+Open [http://localhost:8000](http://localhost:8000) or print with:
 
 ```bash
 python -m brandlift_lab.cli --seed 17 --budget 1000000
