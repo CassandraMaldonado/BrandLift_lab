@@ -1,0 +1,74 @@
+# BrandLift Lab
+
+**Interference-aware measurement and budget decisions for brand advertising.**
+
+BrandLift Lab is a production-shaped data science project for measuring whether a brand campaign caused incremental outcomes—not merely whether exposed users converted. It simulates a multi-market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers, and recommends a risk-aware budget allocation under diminishing returns.
+
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
+![CI](https://img.shields.io/badge/CI-pytest-success)
+
+## The product question
+
+> A native creator-led brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear, and how should the next $1M be allocated?
+
+A naïve exposed-versus-unexposed comparison is biased by targeting and market differences. User-level A/B tests can also be contaminated when content crosses network and geographic boundaries. BrandLift Lab treats the market as the experimental unit and makes the assumptions inspectable.
+
+## What makes this project different
+
+- **Synthetic-control counterfactuals** use non-negative donor weights that sum to one.
+- **Placebo inference** compares treated-market lift with pseudo-treatments in donor markets.
+- **Pre-period fit diagnostics** prevent impressive-looking results from weak counterfactuals.
+- **Spillover sensitivity analysis** shows how conclusions change under donor contamination.
+- **Creative fatigue detection** identifies declining marginal response after repeated exposure.
+- **Saturation-aware optimization** allocates budget with minimum market coverage, capacity limits, and uncertainty penalties.
+- **Decision policy** separates causal evidence, operational diagnostics, and business judgment.
+
+## Run it
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e '.[dev]'
+brandlift-lab
+```
+
+Open [http://localhost:8000](http://localhost:8000), or print a reproducible decision brief:
+
+```bash
+python -m brandlift_lab.cli --seed 17 --budget 1000000
+```
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A["Privacy-safe market panel"] --> Q["Data quality and pre-trend checks"]
+    Q --> S["Synthetic-control estimator"]
+    S --> P["Placebo and spillover diagnostics"]
+    P --> F["Creative-fatigue model"]
+    F --> O["Risk-aware budget optimizer"]
+    O --> D["Executive decision brief and API"]
+```
+
+## Repository map
+
+```text
+src/brandlift_lab/
+  simulation.py         realistic market-level campaign panel
+  synthetic_control.py  constrained counterfactual and placebo inference
+  diagnostics.py        fatigue and spillover sensitivity
+  optimizer.py          saturation-aware budget allocation
+  analysis.py           end-to-end decision policy
+  api.py                 typed delivery layer
+web/                     interactive evidence brief
+tests/                   numerical and contract tests
+docs/                    methods, assumptions, and interview guide
+```
+
+## Responsible measurement
+
+All data is synthetic. Market-level aggregation avoids personal data, but aggregation alone is not a privacy guarantee. The system reports model fit, placebo evidence, and sensitivity ranges rather than presenting a single causal number as unquestionable truth.
+
+Read [the methodology](docs/methodology.md) and [the interview guide](docs/interview-guide.md) before presenting the project.
+
