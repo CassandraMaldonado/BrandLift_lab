@@ -5,7 +5,7 @@
 BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes, not just whether exposed users converted. It simulates a multi market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers and recommends a risk aware budget allocation under diminishing returns.
 
 
-## The question
+## The question.
 
 > A brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear and how should the next $1M be allocated?
 
@@ -13,10 +13,10 @@ A naive exposed vs unexposed comparison is biased by targeting and market differ
 User-level A/B tests can also be contaminated when content crosses network and geographic boundaries. 
 BrandLift Lab treats the market as the experimental unit and makes the assumptions inspectable.
 
-## What makes this project different
+## What makes this project different?
 
-- **Synthetic-control counterfactuals** use non-negative donor weights that sum to one.
-- **Placebo inference** compares treated-market lift with pseudo-treatments in donor markets.
+- **Synthetic-control counterfactuals:** use non-negative donor weights that sum to one.
+- **Placebo inference:** compares treated-market lift with pseudo-treatments in donor markets.
 - **Pre-period fit diagnostics** prevent impressive-looking results from weak counterfactuals.
 - **Spillover sensitivity analysis** shows how conclusions change under donor contamination.
 - **Creative fatigue detection** identifies declining marginal response after repeated exposure.
