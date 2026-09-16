@@ -68,6 +68,3 @@ docs/                    methods, assumptions, and interview guide
 ## Responsible measurement
 
 All data is synthetic. Market-level aggregation avoids personal data, but aggregation alone is not a privacy guarantee. The system reports model fit, placebo evidence, and sensitivity ranges rather than presenting a single causal number as unquestionable truth.
-
-Read [the methodology](docs/methodology.md) and [the interview guide](docs/interview-guide.md) before presenting the project.
-
