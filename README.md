@@ -2,11 +2,8 @@
 
 **Interference-aware measurement and budget decisions for brand advertising.**
 
-BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes—not merely whether exposed users converted. It simulates a multi-market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers, and recommends a risk-aware budget allocation under diminishing returns.
+BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes, not just whether exposed users converted. It simulates a multi market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers and recommends a risk aware budget allocation under diminishing returns.
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
-![CI](https://img.shields.io/badge/CI-pytest-success)
 
 ## The product question
 
