@@ -5,11 +5,11 @@
 BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes, not just whether exposed users converted. It simulates a multi market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers and recommends a risk aware budget allocation under diminishing returns.
 
 
-## The product question
+## The question
 
-> A native creator-led brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear, and how should the next $1M be allocated?
+> A brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear and how should the next $1M be allocated?
 
-A naïve exposed-versus-unexposed comparison is biased by targeting and market differences. User-level A/B tests can also be contaminated when content crosses network and geographic boundaries. BrandLift Lab treats the market as the experimental unit and makes the assumptions inspectable.
+A naive exposed vs unexposed comparison is biased by targeting and market differences. User-level A/B tests can also be contaminated when content crosses network and geographic boundaries. BrandLift Lab treats the market as the experimental unit and makes the assumptions inspectable.
 
 ## What makes this project different
 
