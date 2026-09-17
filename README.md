@@ -15,9 +15,9 @@ BrandLift Lab treats the market as the experimental unit and makes the assumptio
 
 ## What makes this project different?
 
-Builds a realistic counterfactual for each treated market using a weighted combination of comparable markets.
-Uses placebo tests to assess whether the measured lift is meaningful or could reasonably occur by chance.
-Checks how well the model fits before the campaign, so results are not trusted when the comparison is weak.
+- Builds a realistic counterfactual for each treated market using a weighted combination of comparable markets.
+- Uses placebo tests to assess whether the measured lift is meaningful or could reasonably occur by chance.
+- Checks how well the model fits before the campaign, so results are not trusted when the comparison is weak.
 Tests whether spillover into control markets would materially change the conclusion.
 Identifies when repeated exposure starts producing diminishing returns.
 Recommends a budget allocation while accounting for market coverage, capacity constraints, uncertainty, and diminishing returns.
