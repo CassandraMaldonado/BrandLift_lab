@@ -15,13 +15,13 @@ BrandLift Lab treats the market as the experimental unit and makes the assumptio
 
 ## What makes this project different?
 
-- **Synthetic control counterfactuals:** use non-negative donor weights that sum to one.
-- **Placebo inference:** compares treated market lift with pseudo-treatments in donor markets.
-- **Pre-period fit diagnostics:** prevent impressive-looking results from weak counterfactuals.
-- **Spillover sensitivity analysis** shows how conclusions change under donor contamination.
-- **Creative fatigue detection** identifies declining marginal response after repeated exposure.
-- **Saturation-aware optimization** allocates budget with minimum market coverage, capacity limits, and uncertainty penalties.
-- **Decision policy** separates causal evidence, operational diagnostics, and business judgment.
+Builds a realistic counterfactual for each treated market using a weighted combination of comparable markets.
+Uses placebo tests to assess whether the measured lift is meaningful or could reasonably occur by chance.
+Checks how well the model fits before the campaign, so results are not trusted when the comparison is weak.
+Tests whether spillover into control markets would materially change the conclusion.
+Identifies when repeated exposure starts producing diminishing returns.
+Recommends a budget allocation while accounting for market coverage, capacity constraints, uncertainty, and diminishing returns.
+Combines statistical evidence with practical campaign considerations to produce a clear recommendation.
 
 ## Run it
 
