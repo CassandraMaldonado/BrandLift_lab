@@ -42,12 +42,12 @@ python -m brandlift_lab.cli --seed 17 --budget 1000000
 
 ```mermaid
 flowchart LR
-    A["Privacy-safe market panel"] --> Q["Data quality and pre-trend checks"]
-    Q --> S["Synthetic-control estimator"]
-    S --> P["Placebo and spillover diagnostics"]
-    P --> F["Creative-fatigue model"]
-    F --> O["Risk-aware budget optimizer"]
-    O --> D["Executive decision brief and API"]
+    A["Market-level campaign data"] --> Q["Check data quality and pre-campaign trends"]
+    Q --> S["Build a counterfactual for each treated market"]
+    S --> P["Run placebo tests and check for spillover"]
+    P --> F["Measure creative fatigue over time"]
+    F --> O["Recommend how to allocate the next budget"]
+    O --> D["Present the results in a decision brief and API"]
 ```
 
 ## Repository map
