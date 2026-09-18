@@ -9,7 +9,5 @@ def main():
     args = parser.parse_args()
     print(json.dumps(analyze(args.seed, args.budget), indent=2))
 
-
 if __name__ == "__main__":
     main()
-
