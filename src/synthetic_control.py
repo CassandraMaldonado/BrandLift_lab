@@ -1,10 +1,8 @@
 # Synthetic control estimation and market placebo inference.
 
 from dataclasses import dataclass
-
 import numpy as np
 from scipy.optimize import minimize
-
 from .simulation import MarketPanel
 
 
