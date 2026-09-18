@@ -1,10 +1,8 @@
 # Diminishing return budget optimization with uncertainty penalty.
 
 from dataclasses import dataclass
-
 import numpy as np
 from scipy.optimize import minimize
-
 
 @dataclass(frozen=True)
 class Allocation:
@@ -42,4 +40,3 @@ def optimize_budget(
         Allocation(name, float(budget), float(value), float(mr))
         for name, budget, value, mr in zip(markets, result.x, expected, marginal, strict=True)
     ]
-
