@@ -1,4 +1,4 @@
-"""Constrained synthetic-control estimation and market placebo inference."""
+# Synthetic control estimation and market placebo inference.
 
 from dataclasses import dataclass
 
