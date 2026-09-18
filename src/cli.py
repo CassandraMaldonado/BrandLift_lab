@@ -1,8 +1,6 @@
 import argparse
 import json
-
 from .analysis import analyze
-
 
 def main():
     parser = argparse.ArgumentParser(description="Produce a causal brand-lift decision brief")
