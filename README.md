@@ -25,7 +25,7 @@ To address this, BrandLift Lab treats each market as the experimental unit, buil
 - Recommends a budget allocation while accounting for market coverage, capacity constraints, uncertainty, and diminishing returns.
 - Combines statistical evidence with practical campaign considerations to produce a clear recommendation.
 
-## houn it
+## How to run it
 
 ```bash
 python -m venv .venv
