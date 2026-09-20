@@ -52,18 +52,7 @@ flowchart LR
 
 ## Repository map
 
-```text
-src/brandlift_lab/
-  simulation.py         market-level campaign panel.
-  synthetic_control.py  constrained counterfactual and placebo inference. #
-  diagnostics.py        fatigue and spillover sensitivity.
-  optimizer.py          saturation-aware budget allocation.
-  analysis.py           decision policy.
-  api.py                 typed delivery layer
-web/                     interactive evidence brief
-tests/                   numerical and contract tests
-docs/                    methods, assumptions, and interview guide
-```
+
 
 ## Responsible measurement
 
