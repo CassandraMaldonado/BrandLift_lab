@@ -9,9 +9,6 @@ BrandLift Lab is meant to be used for measuring whether a brand campaign caused 
 
 > A brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear and how should the next $1M be allocated?
 
-A naive exposed vs unexposed comparison is biased by targeting and market differences. 
-User-level A/B tests can also be contaminated when content crosses network and geographic boundaries. 
-BrandLift Lab treats the market as the experimental unit and makes the assumptions inspectable.
 
 ## What makes this project different?
 
