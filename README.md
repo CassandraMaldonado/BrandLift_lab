@@ -52,16 +52,19 @@ flowchart LR
 
 ## Repository map
 
-src/
-  simulation.py         creates the market-level campaign data
-  synthetic_control.py  builds counterfactuals and runs placebo tests
-  diagnostics.py        checks for creative fatigue and spillover
-  optimizer.py          recommends how to allocate the next budget
-  analysis.py           brings the results together into a recommendation
-  api.py                makes the analysis available to the web app
-web/                     interactive campaign results dashboard
-tests/                   tests the calculations and API behavior
-docs/                    explains the methods, assumptions, and interview story
+## Repository map
+
+| Location | What it does |
+|---|---|
+| `src/brandlift_lab/simulation.py` | Creates the market-level campaign data used in the analysis. |
+| `src/brandlift_lab/synthetic_control.py` | Builds a counterfactual for each treated market and runs placebo tests. |
+| `src/brandlift_lab/diagnostics.py` | Checks for creative fatigue and possible spillover into control markets. |
+| `src/brandlift_lab/optimizer.py` | Recommends how to allocate the next campaign budget. |
+| `src/brandlift_lab/analysis.py` | Brings the results together and produces the final recommendation. |
+| `src/brandlift_lab/api.py` | Makes the analysis available to the web application. |
+| `web/` | Contains the interactive campaign-results dashboard. |
+| `tests/` | Tests the calculations and API behavior. |
+| `docs/` | Explains the methodology, assumptions, limitations, and interview narrative. |
 
 ## Responsible measurement
 
