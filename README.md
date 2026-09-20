@@ -54,7 +54,7 @@ flowchart LR
 
 ## Repository map
 
-| Location | What it does |
+| Repo loc | What it does |
 |---|---|
 | `src/brandlift_lab/simulation.py` | Creates the market-level campaign data used in the analysis. |
 | `src/brandlift_lab/synthetic_control.py` | Builds a counterfactual for each treated market and runs placebo tests. |
