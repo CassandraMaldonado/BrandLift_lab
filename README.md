@@ -52,7 +52,16 @@ flowchart LR
 
 ## Repository map
 
-
+src/
+  simulation.py         creates the market-level campaign data
+  synthetic_control.py  builds counterfactuals and runs placebo tests
+  diagnostics.py        checks for creative fatigue and spillover
+  optimizer.py          recommends how to allocate the next budget
+  analysis.py           brings the results together into a recommendation
+  api.py                makes the analysis available to the web app
+web/                     interactive campaign results dashboard
+tests/                   tests the calculations and API behavior
+docs/                    explains the methods, assumptions, and interview story
 
 ## Responsible measurement
 
