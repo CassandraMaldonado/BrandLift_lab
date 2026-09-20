@@ -13,8 +13,7 @@ BrandLift Lab is meant to be used for measuring whether a brand campaign caused 
 
 A simple comparison between exposed and unexposed users would be misleading because the two groups may differ before the campaign begins. A traditional user-level A/B test may also be unreliable when content spreads across geographic and network boundaries.
 
-To address this, BrandLift Lab treats each market as the experimental unit, builds a counterfactual using comparable markets, and clearly reports the assumptions behind the results.
-
+To address this, BrandLift Lab treats each market as the experimental unit, builds a counterfactual using comparable markets and reports the assumptions behind the results.
 
 ## What makes this project different?
 
