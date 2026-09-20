@@ -8,9 +8,9 @@ BrandLift Lab is meant to be used for measuring whether a brand campaign caused 
 
 > A brand campaign launched across six markets. I wanted to answer three practical questions:
 
-- Did the campaign generate additional brand actions?
-- When did repeated exposure begin to reduce its effectiveness?
-- How should the next $1 million be allocated across markets?
+> - Did the campaign generate additional brand actions?
+> - When did repeated exposure begin to reduce its effectiveness?
+> - How should the next $1 million be allocated across markets?
 
 A simple comparison between exposed and unexposed users would be misleading because the two groups may differ before the campaign begins. A traditional user-level A/B test may also be unreliable when content spreads across geographic and network boundaries.
 
