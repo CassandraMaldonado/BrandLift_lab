@@ -4,10 +4,17 @@
 
 BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes, not just whether exposed users converted. It simulates a multi market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers and recommends a risk aware budget allocation under diminishing returns.
 
+## The question
 
-## The question.
+> A brand campaign launched across six markets. I wanted to answer three practical questions:
 
-> A brand campaign launched in six markets. Did it generate incremental brand actions, where did creative fatigue appear and how should the next $1M be allocated?
+- Did the campaign generate additional brand actions?
+- When did repeated exposure begin to reduce its effectiveness?
+- How should the next $1 million be allocated across markets?
+
+A simple comparison between exposed and unexposed users would be misleading because the two groups may differ before the campaign begins. A traditional user-level A/B test may also be unreliable when content spreads across geographic and network boundaries.
+
+To address this, BrandLift Lab treats each market as the experimental unit, builds a counterfactual using comparable markets, and clearly reports the assumptions behind the results.
 
 
 ## What makes this project different?
@@ -20,7 +27,7 @@ BrandLift Lab is meant to be used for measuring whether a brand campaign caused 
 - Recommends a budget allocation while accounting for market coverage, capacity constraints, uncertainty, and diminishing returns.
 - Combines statistical evidence with practical campaign considerations to produce a clear recommendation.
 
-## Run it
+## houn it
 
 ```bash
 python -m venv .venv
