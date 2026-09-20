@@ -62,9 +62,9 @@ flowchart LR
 | `src/brandlift_lab/optimizer.py` | Recommends how to allocate the next campaign budget. |
 | `src/brandlift_lab/analysis.py` | Brings the results together and produces the final recommendation. |
 | `src/brandlift_lab/api.py` | Makes the analysis available to the web application. |
-| `web/` | Contains the interactive campaign-results dashboard. |
+| `web/` | Contains the interactive campaign results dashboard. |
 | `tests/` | Tests the calculations and API behavior. |
-| `docs/` | Explains the methodology, assumptions, limitations, and interview narrative. |
+| `docs/` | Explains the methodology, assumptions, limitations and interview narrative. |
 
 ## Responsible measurement
 
