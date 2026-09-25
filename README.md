@@ -2,7 +2,7 @@
 
 **A practical way to measure brand campaign impact and make better budget decisions.**
 
-I built BrandLift Lab to understand whether a brand campaign actually caused additional outcomes—not simply whether people who saw the campaign were more likely to convert.
+I built BrandLift Lab to understand whether a brand campaign actually caused additional outcomes, not simply whether people who saw the campaign were more likely to convert.
 
 The project simulates a campaign launched across six markets and focuses on three questions:
 
@@ -19,11 +19,6 @@ The goal is to make the final recommendation useful while still being clear abou
 _____
 
 ## The question
-
-> A brand campaign launched across six markets. I wanted to answer three practical questions:
-> - Did the campaign generate additional brand actions?
-> - When did repeated exposure begin to reduce its effectiveness?
-> - How should the next $1 million be allocated across markets?
 
 A simple comparison between exposed and unexposed users would be misleading because the two groups may differ before the campaign begins. A traditional user-level A/B test may also be unreliable when content spreads across geographic and network boundaries.
 
