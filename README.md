@@ -1,7 +1,5 @@
 # BrandLift Lab
 
-# BrandLift Lab
-
 **A practical way to measure brand campaign impact and make better budget decisions.**
 
 I built BrandLift Lab to understand whether a brand campaign actually caused additional outcomes—not simply whether people who saw the campaign were more likely to convert.
@@ -19,10 +17,6 @@ To address this, I treat each market as the experimental unit and build a counte
 The goal is to make the final recommendation useful while still being clear about the assumptions and limitations behind it.
 
 _____
-
-**Interference-aware measurement and budget decisions for brand advertising.**
-
-BrandLift Lab is meant to be used for measuring whether a brand campaign caused incremental outcomes, not just whether exposed users converted. It simulates a multi market ad launch, constructs a synthetic counterfactual for each treated market, diagnoses creative fatigue and spillovers and recommends a risk aware budget allocation under diminishing returns.
 
 ## The question
 
