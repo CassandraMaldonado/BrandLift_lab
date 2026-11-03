@@ -63,8 +63,6 @@ flowchart LR
 
 ## Repository map
 
-## Repository map
-
 
 ## Responsible measurement
 
