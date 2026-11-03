@@ -77,3 +77,4 @@ flowchart LR
 
 ## Responsible measurement
 
+All of the data in this project is synthetic, so it does not include personal information. I use market-level data rather than individual-level dat, but I still do not treat aggregation as a complete privacy solution. Instead of presenting one number as the final answer, I show how well the model fits the data, compare the results with placebo tests and include sensitivity ranges. This makes it easier to understand how strong the evidence is and what assumptions could change the conclusion.
