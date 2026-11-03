@@ -1,9 +1,7 @@
 # Evidence brief and decision policy.
 
 from dataclasses import asdict
-
 import numpy as np
-
 from .diagnostics import fatigue_diagnostics, spillover_sensitivity
 from .optimizer import optimize_budget
 from .simulation import simulate_panel
