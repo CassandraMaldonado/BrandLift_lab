@@ -3,7 +3,6 @@
 import numpy as np
 from .simulation import MarketPanel
 
-
 def fatigue_diagnostics(panel: MarketPanel) -> dict[str, float | int | str]:
     treated = np.flatnonzero(panel.treated)
     post_weeks = np.flatnonzero(panel.post)
