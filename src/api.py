@@ -1,16 +1,13 @@
-# Connects the BrandLift analysis to the dashboard.
-
-# I use this file as a small bridge between the analysis and the website. It
+# I use this file as a small bridge between the analysis and the website. 
+# It
 # gives the dashboard a clean way to request the same decision brief with a
 # different seed or budget.
 
 from functools import lru_cache
 from pathlib import Path
-
 from fastapi import FastAPI, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-
 from .analysis import analyze
 
 ROOT = Path(__file__).resolve().parents[2]
