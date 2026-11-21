@@ -1,7 +1,5 @@
-"""Pulls the campaign evidence together into one practical recommendation."""
-
-# This is the file I use to run the full workflow. It starts with the campaign
-# data, measures lift, checks whether the result is believable, then turns it
+# This is the file I use to run the full workflow. 
+# It starts with the campaign data, measures lift, checks whether the result is believable, then turns it
 # into a recommendation instead of stopping at a single metric.
 
 from dataclasses import asdict
