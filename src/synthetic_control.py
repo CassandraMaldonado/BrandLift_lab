@@ -19,6 +19,7 @@ class MarketEstimate:
     top_donors: tuple[tuple[str, float], ...]
 
 
+ # I only use non-negative weights that add up to one. That keeps the counterfactual understandable as a blend of real donor markets.
 def donor_weights(target_pre: np.ndarray, donors_pre: np.ndarray) -> np.ndarray:
     n = donors_pre.shape[0]
     scale = max(float(np.std(target_pre)), 1.0)
