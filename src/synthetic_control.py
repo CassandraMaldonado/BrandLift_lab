@@ -40,7 +40,8 @@ def donor_weights(target_pre: np.ndarray, donors_pre: np.ndarray) -> np.ndarray:
         raise RuntimeError(f"Synthetic-control optimization failed: {result.message}")
     return result.x
 
-
+ # The gap is the difference between what happened and what the matched
+    # comparison says would likely have happened without the campaign.
 def _gap(target: np.ndarray, donors: np.ndarray, pre: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     weights = donor_weights(target[pre], donors[:, pre])
     return target - weights @ donors, weights
