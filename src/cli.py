@@ -1,4 +1,5 @@
-# Lets me rerun the full campaign brief from the terminal. I use this when I want a quick JSON version of the result without opening the dashboard.
+# Lets me rerun the full campaign brief from the terminal. 
+# I use this when I want a quick JSON version of the result without opening the dashboard.
 
 import argparse
 import json
