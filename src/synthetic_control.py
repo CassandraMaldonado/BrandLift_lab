@@ -1,8 +1,7 @@
 # Builds a comparison market and checks whether the lift stands out.
 
 # This is the statistical core of the project. I use similar untreated markets to build a counterfactual for each treated market, 
-# then run placebo tests to
-# see whether the estimated lift is unusual or could easily happen by chance.
+# then run placebo tests to see whether the estimated lift is unusual or could easily happen by chance.
 
 from dataclasses import dataclass
 import numpy as np
