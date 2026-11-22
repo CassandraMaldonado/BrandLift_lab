@@ -1,5 +1,5 @@
-"""Constrained synthetic-control estimation and market placebo inference."""
-"""Builds a fair comparison market and checks whether the lift stands out."""
+# Constrained synthetic-control estimation and market placebo inference.
+# Builds a fair comparison market and checks whether the lift stands out.
 
 # This is the statistical core of the project. I use similar untreated markets
 # to build a counterfactual for each treated market, then run placebo tests to
